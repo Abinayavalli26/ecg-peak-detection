@@ -1,38 +1,40 @@
 # ECG Peak Detection using MATLAB
 
-This mini project focuses on detecting R-peaks from an ECG signal using MATLAB. The ECG signal is first simulated and then passed through a Butterworth bandpass filter to remove noise. After filtering, R-peaks are detected using built-in functions, and the heart rate is estimated based on the number of peaks per minute.
+This project focuses on detecting R-peaks from an ECG signal using MATLAB. A synthetic ECG signal is generated with added noise to simulate real-world conditions. The signal is filtered using a Butterworth bandpass filter. After filtering, R-peaks are identified, and heart rate is calculated based on peak intervals.
 
 ## Project Overview
 
-- A synthetic ECG signal is generated with added noise to simulate a real-world scenario.
-- A bandpass Butterworth filter (0.5–40 Hz) is used to reduce noise while preserving relevant frequency components.
-- The filtered signal is processed using `findspeaks()` to locate the R-peaks.
-- The time difference between R-peaks is used to estimate beats per minute (BPM).
-- Three plots are generated to visualize the raw ECG, the filtered output, and the detected peaks.
+- Simulated ECG with added noise
+- Applied bandpass Butterworth filter (0.5–40 Hz)
+- Detected R-peaks using peak detection logic
+- Calculated heart rate in beats per minute (BPM)
+- Visualized raw, filtered, and annotated ECG signals
 
-## Files Included
+## Included Files
 
-- `ecg_peak_detection.m` – MATLAB script for simulation, filtering, peak detection, and plotting
-- `raw_ecg.png` – Original noisy ECG signal
-- `filtered_ecg.png` – Output after applying the bandpass filter
-- `r_peaks` – Filtered ECG with R-peaks marked
+- ecg_peak_detection.m – MATLAB script
+- raw_ecg.png – Raw noisy ECG plot
+- filtered_ecg.png – Filtered ECG plot
+- r_peaks_detected.png – ECG plot with detected peaks
 
 ## Tools Used
 
-- MATLAB (R2023 or later recommended)
+- MATLAB
 - Signal Processing Toolbox
+- Core functions: butter, filtfilt, findpeaks
 
 ## Learning Outcomes
 
-- Understanding of ECG signal characteristics
-- Basics of biomedical signal filtering
-- Practical experience with MATLAB functions like `butter`, `filtfilt`, and `findspeaks`
-- Visualization of biomedical signals for analysis
+- Gained understanding of ECG waveform structure
+- Applied filtering to biomedical signals
+- Learned practical signal processing with MATLAB
+- Visualized each stage of signal transformation
 
 ## Author
 
 Abinayavalli C  
 Biomedical Engineering Student  
-GitHub: [Abinayavalli26](https://github.com/Abinayavalli26)
+GitHub: https://github.com/Abinayavalli26  
 LinkedIn: www.linkedin.com/in/abinayavalli-chellapandian-5a99b528a
+
 
