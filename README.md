@@ -6,7 +6,7 @@ This mini project focuses on detecting R-peaks from an ECG signal using MATLAB. 
 
 - A synthetic ECG signal is generated with added noise to simulate a real-world scenario.
 - A bandpass Butterworth filter (0.5–40 Hz) is used to reduce noise while preserving relevant frequency components.
-- The filtered signal is processed using `findpeaks()` to locate the R-peaks.
+- The filtered signal is processed using `findspeaks()` to locate the R-peaks.
 - The time difference between R-peaks is used to estimate beats per minute (BPM).
 - Three plots are generated to visualize the raw ECG, the filtered output, and the detected peaks.
 
@@ -15,7 +15,7 @@ This mini project focuses on detecting R-peaks from an ECG signal using MATLAB. 
 - `ecg_peak_detection.m` – MATLAB script for simulation, filtering, peak detection, and plotting
 - `raw_ecg.png` – Original noisy ECG signal
 - `filtered_ecg.png` – Output after applying the bandpass filter
-- `r_peaks_detected.png` – Filtered ECG with R-peaks marked
+- `r_peaks` – Filtered ECG with R-peaks marked
 
 ## Tools Used
 
@@ -26,7 +26,7 @@ This mini project focuses on detecting R-peaks from an ECG signal using MATLAB. 
 
 - Understanding of ECG signal characteristics
 - Basics of biomedical signal filtering
-- Practical experience with MATLAB functions like `butter`, `filtfilt`, and `findpeaks`
+- Practical experience with MATLAB functions like `butter`, `filtfilt`, and `findspeaks`
 - Visualization of biomedical signals for analysis
 
 ## Author
